@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wanderly Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Wanderly</h1>
+
+    <!-- These control which form is shown -->
+    <input type="radio" name="form" id="login" checked>
+    <input type="radio" name="form" id="signup">
+
+
+    <!-- LOGIN -->
+
+    <div class="form login-form">
+
+        <h2>Login</h2>
+
+        <form action="./index.html">
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>
+            Don't have an account?
+
+            <label for="signup">
+                Sign Up
+            </label>
+        </p>
+
+    </div>
+
+
+    <!-- SIGN UP -->
+
+    <div class="form signup-form">
+
+        <h2>Sign Up</h2>
+
+        <form action="./index.html">
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Create Password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+        </form>
+
+        <p>
+            Already have an account?
+
+            <label for="login">
+                Login
+            </label>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

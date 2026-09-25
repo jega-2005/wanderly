@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #f8fafc;
+}
+
+.container {
+    width: 380px;
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo */
+
+h1 {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    color: #0f172a;
+}
+
+
+/* Hide radio buttons */
+
+input[type="radio"] {
+    display: none;
+}
+
+
+/* Hide both forms */
+
+.form {
+    display: none;
+}
+
+
+/* Heading */
+
+h2 {
+    font-family: "Playfair Display", serif;
+
+    margin-bottom: 25px;
+
+    color: #0f172a;
+}
+
+
+/* Input */
+
+.input-box {
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #64748b;
+}
+
+.input-box input {
+    width: 100%;
+
+    padding: 12px 15px 12px 40px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: #d97706;
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #d97706;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b45309;
+}
+
+
+/* Bottom text */
+
+p {
+    margin-top: 20px;
+
+    color: #64748b;
+}
+
+label {
+    color: #d97706;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+
+/* Show Login */
+
+#login:checked ~ .login-form {
+    display: block;
+}
+
+
+/* Show Sign Up */
+
+#signup:checked ~ .signup-form {
+    display: block;
+}
